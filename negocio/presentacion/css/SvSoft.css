@@ -1,0 +1,80 @@
+.Titulos{
+    font-family:Impact;
+    font-size: 50px;
+    color: #38f1d3; text-shadow: 5px 5px 5px black;
+    width:100wv; 
+    text-align:center;
+}
+/* CSS de la animacion Hover */
+body{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 20px;
+}
+
+nav{
+    font-family: Arial ;
+}
+
+.lil{
+    text-decoration: none !important;
+}
+
+.seccionactores{
+    background-image: url(imagenes/invernadero.jpg);
+    height: 350px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.secciondirect{
+    background-image: url(imagenes/personal.png);
+    height: 350px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.box{
+    
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.box .hover{
+    width: 0%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.850);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.hover h1{
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.box:hover .hover{
+    width: 100%;
+}
+

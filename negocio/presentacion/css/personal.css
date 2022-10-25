@@ -1,0 +1,62 @@
+.Titulos{
+    font-family:Impact;
+    font-size: 50px;
+    color: #38f1d3; text-shadow: 5px 5px 5px black;
+    width:100wv; 
+    text-align:center;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .btn{
+	position:relative;
+	height: 40px;
+	width: 150px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color:transparent;
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+	overflow: hidden;
+	transition: all 500ms ease;
+	border: 2px solid rgb(0, 0, 0);
+	margin-bottom: 10px;
+	z-index: 0;
+	font-weight: 700;
+}
+
+.container .btn:hover{
+	color:#fff;
+	background-color: #20e2d7;
+	border: 2px solid #12655A;
+}
+
+.container .btn--1:hover{
+	color:black;
+	background-color: #A9FFE9;
+	border: 2px solid #32A798;
+}
+.container .btn--2:hover{
+	color:black;
+	background-color: #D89CFF;
+	border: 2px solid #8F00FF;
+}
+.container .btn--3:hover{
+	color:black;
+	background-color: #B8FF9D;
+	border: 2px solid #46FF00;
+}
+.container .btn--4:hover{
+	color:black;
+	background-color: #FFDB94;
+	border: 2px solid #FFA900;
+}
+
+tr{
+    text-align: center;
+}
+th{
+    text-align: left;
+}
