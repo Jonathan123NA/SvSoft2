@@ -1,12 +1,12 @@
-<?php include 'template/header.php' ?>
+<?php include 'template/headerPersona.php' ?>
 
 <?php
     if(!isset($_GET['idPersona'])){
-        header('Location: index.php?mensaje=error');
+        header('Location: invSupervisor.php?mensaje=error');
         exit();
     }
 
-    include_once 'model/conexion.php';
+    include_once 'model/conexionPersona.php';
     $idPersona = $_GET['idPersona'];
 
     $sentencia = $bd->prepare("select * from personal where idPersona = ?;");
@@ -22,7 +22,7 @@
                 <div class="card-header">
                     Editar datos:
                 </div>
-                <form class="p-4" method="POST" action="ModificarProceso.php">
+                <form class="p-4" method="POST" action="ModificarProcesoPersona.php">
                     <div class="mb-3">
                         <label class="form-label">ID Personal: </label>
                         <input type="text" class="form-control" name="txtID" autofocus required value="<?php echo $personal->idPersona; ?>">
@@ -53,4 +53,4 @@
     </div>
 </div>
 
-<?php include 'template/footer.php' ?>
+<?php include 'template/footerPersona.php' ?>

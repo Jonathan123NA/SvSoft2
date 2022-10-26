@@ -101,7 +101,7 @@
                         <div class="card glass">
                             <div class="card-content">
                                 <div class="imagen">
-                                    <img src="presentacion/css/fotos/JonathanNicolas.jpg">
+                                    <img src="presentacion/css/fotos/JonathanNicolas.jpeg">
                                 </div>
                                 <div class="media-icons">
                                     <a href="https://github.com/..." target="_blank"
@@ -121,7 +121,7 @@
                         <div class="card glass">
                             <div class="card-content">
                                 <div class="imagen">
-                                    <img src="presentacion/css/fotos/LeylaniSantillan.jpg">
+                                    <img src="presentacion/css/fotos/LeylaniSantillan.jpeg">
                                 </div>
                                 <div class="media-icons">
                                     <a href="https://github.com/..." target="_blank"
@@ -141,7 +141,7 @@
                         <div class="card glass">
                             <div class="card-content">
                                 <div class="imagen">
-                                    <img src="presentacion/css/fotos/JustinVazquez.jpg">
+                                    <img src="presentacion/css/fotos/JustinVazquez.jpeg">
                                 </div>
                                 <div class="media-icons">
                                     <a href="https://github.com/... " target="_blank"
@@ -161,7 +161,7 @@
                         <div class="card glass">
                             <div class="card-content">
                                 <div class="imagen">
-                                    <img src="presentacion/css/fotos/Mauricio Riosjpeg">
+                                    <img src="presentacion/css/fotos/Mauricio Rios.jpg">
                                 </div>
                                 <div class="media-icons">
                                     <a href="https://github.com/... " target="_blank"

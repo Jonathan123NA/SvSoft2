@@ -1,7 +1,7 @@
-<?php include 'template/header.php' ?>
+<?php include 'template/headerPersona.php' ?>
 
 <?php
-    include_once "model/conexion.php";
+    include_once "model/conexionPersona.php";
     $sentencia = $bd -> query("select * from personal");
     $personal = $sentencia->fetchAll(PDO::FETCH_OBJ);
     //print_r($personal);
@@ -101,8 +101,8 @@
                                     <td><?php echo $dato->actividad; ?></td>
                                     <td><?php echo $dato->hora; ?></td>
                                     <td><?php echo $dato->fecha; ?></td>
-                                    <td a class="text-success" href="Modificar.php?idPersona=<?php echo $dato->idPersona; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                    <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="Eliminar.php?idPersona=<?php echo $dato->idPersona; ?>"><i class="bi bi-trash"></i></a></td>
+                                    <td><a class="text-success" href="ModificarPersona.php?idPersona=<?php echo $dato->idPersona; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                    <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="EliminarPersona.php?idPersona=<?php echo $dato->idPersona; ?>"><i class="bi bi-trash"></i></a></td>
                                 </tr>
                                 <?php
                                 }
@@ -119,7 +119,7 @@
                 <div class="card-header">
                     Captura de Datos
                 </div>
-                <form  class="p-4" method="POST" action="Registrar.php">
+                <form  class="p-4" method="POST" action="RegistrarPersona.php">
                     <div class="mb-3">
                         <label class="form-label">ID Personal: </label>
                     <input type="text" class="form-control" name="txtID" autofocus required>
@@ -158,4 +158,4 @@
 </div>
 
 
-<?php include 'template/footer.php' ?>
+<?php include 'template/footerPersona.php' ?>

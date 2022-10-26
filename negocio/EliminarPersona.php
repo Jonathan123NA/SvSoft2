@@ -1,19 +1,19 @@
 <?php 
     if(!isset($_GET['idPersona'])){
-        header('Location: index.php?mensaje=error');
+        header('Location: invSupervisor.php?mensaje=error');
         exit();
     }
 
-    include 'model/conexion.php';
+    include 'model/conexionPersona.php';
     $idPersona = $_GET['idPersona'];
 
     $sentencia = $bd->prepare("DELETE FROM personal where idPersona = ?;");
     $resultado = $sentencia->execute([$idPersona]);
 
     if ($resultado === TRUE) {
-        header('Location: index.php?mensaje=eliminado');
+        header('Location: invSupervisor.php?mensaje=eliminado');
     } else {
-        header('Location: index.php?mensaje=error');
+        header('Location: invSupervisor.php?mensaje=error');
     }
     
 ?>
