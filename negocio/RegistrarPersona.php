@@ -1,7 +1,7 @@
 <?php
     print_r($_POST);
     if(empty($_POST["oculto"]) || empty($_POST["txtID"]) || empty($_POST["txtNombre"]) || empty($_POST["txtActividades"])|| empty($_POST["txtHora"])|| empty($_POST["txtFecha"])){
-    header('Location: invSupervisor.php?mensaje=falta');
+    header('Location: perSupervisor.php?mensaje=falta');
     exit();
 }
 
@@ -16,9 +16,9 @@ $sentencia = $bd->prepare("INSERT INTO personal(idPersona,nombre,actividad,hora,
 $resultado = $sentencia->execute([$id,$nombre,$actividad,$hora,$fecha ]);
 
 if ($resultado === TRUE) {
-    header('Location: invSupervisor.php?mensaje=registrado');
+    header('Location: perSupervisor.php?mensaje=registrado');
 } else {
-    header('Location: invSupervisor.php?mensaje=error');
+    header('Location: perSupervisor.php?mensaje=error');
     exit();
 }
 

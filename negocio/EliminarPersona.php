@@ -1,6 +1,6 @@
 <?php 
     if(!isset($_GET['idPersona'])){
-        header('Location: invSupervisor.php?mensaje=error');
+        header('Location: perSupervisor.php?mensaje=error');
         exit();
     }
 
@@ -11,9 +11,9 @@
     $resultado = $sentencia->execute([$idPersona]);
 
     if ($resultado === TRUE) {
-        header('Location: invSupervisor.php?mensaje=eliminado');
+        header('Location: perSupervisor.php?mensaje=eliminado');
     } else {
-        header('Location: invSupervisor.php?mensaje=error');
+        header('Location: perSupervisor.php?mensaje=error');
     }
     
 ?>

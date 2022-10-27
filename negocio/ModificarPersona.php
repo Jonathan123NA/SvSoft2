@@ -2,7 +2,7 @@
 
 <?php
     if(!isset($_GET['idPersona'])){
-        header('Location: invSupervisor.php?mensaje=error');
+        header('Location: perSupervisor.php?mensaje=error');
         exit();
     }
 

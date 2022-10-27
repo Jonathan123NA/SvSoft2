@@ -1,7 +1,7 @@
 <?php
     print_r($_POST);
     if(!isset($_POST['idPersona'])){
-        header('Location: invSupervisor.php?mensaje=error');
+        header('Location: perSupervisor.php?mensaje=error');
     }
 
     include 'model/conexionPersona.php';
@@ -16,9 +16,9 @@
     $resultado = $sentencia->execute([$id, $nombre, $actividad, $hora, $fecha, $idPersona]);
 
     if ($resultado === TRUE) {
-        header('Location: invSupervisor.php?mensaje=editado');
+        header('Location: perSupervisor.php?mensaje=editado');
     } else {
-        header('Location: invSupervisor.php?mensaje=error');
+        header('Location: perSupervisor.php?mensaje=error');
         exit();
     }
     

@@ -57,7 +57,7 @@
         </div> 
       </a>
 
-      <a href="personalAdministrador.php" >
+      <a href="perAdministrador.php" >
         <div class = " secciondirect mt-3">
             <div class="box">
                 <div class="hover">
