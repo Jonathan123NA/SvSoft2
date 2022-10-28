@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>Actividades del Personal</title>
+  <title>Datos relevantes del Invernadero</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-md">
                 <header class="py-3">
-                    <h3 class="text-center"> CRUD Personal</h3>
+                    <h3 class="text-center"> CRUD Invernadero</h3>
                 </header>
             </div>
         </div>

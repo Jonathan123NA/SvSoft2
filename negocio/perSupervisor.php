@@ -95,7 +95,7 @@
                                 foreach($personal as $dato){
                             ?>
                            
-p                                <tr>
+                                <tr>
                                     <td scope="row"><?php echo $dato->idPersona; ?></td>
                                     <td><?php echo $dato->nombre; ?></td>
                                     <td><?php echo $dato->actividad; ?></td>

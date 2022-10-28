@@ -15,7 +15,7 @@
                         <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                     </svg>Inicio</a>
 
-                <a class="btn btn-outline-light m-2 d-flex justify-content-center align-items-center" href="invernaderoSupervisor.php"> 
+                <a class="btn btn-outline-light m-2 d-flex justify-content-center align-items-center" href="invSupervisor.php"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
                         <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
                 </svg>Invernadero</a>
@@ -46,7 +46,7 @@
 <h1 class="Titulos">Bienvenido a SvSoft</h1>
 <br>
 
-    <a href="invernaderoSupervisor.php" >
+    <a href="invSupervisor.php" >
         <div class = " seccionactores mt-3">
             <div class="box">
                 <div class="hover">

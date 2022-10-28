@@ -1,4 +1,4 @@
-<?php include 'template/headerPersona.php' ?>
+<?php include 'template/headerInvernadero.php' ?>
 
 <?php
     include_once "model/conexionPersona.php";
@@ -96,12 +96,12 @@
                                 foreach($invernadero as $dato){
                             ?>
                            
-p                                <tr>
+                                <tr>
                                     <td scope="row"><?php echo $dato->idRegistro; ?></td>
                                     <td><?php echo $dato->nave; ?></td>
                                     <td><?php echo $dato->tempInterna; ?></td>
-                                    <td><?php echo $dato->tempExterna; ?></td>
-                                    <td><?php echo $dato->humeRealtiva; ?></td>
+                                    <td><?php echo $dato->temExterna; ?></td>
+                                    <td><?php echo $dato->humeRelativa; ?></td>
                                     <td><?php echo $dato->radiacion; ?></td>
                                     <td><a class="text-success" href="ModificarInvernadero.php?idRegistro=<?php echo $dato->idRegistro; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a onclick="return confirm('¿Estas seguro de que se desea eliminar?');" class="text-danger" href="EliminarInvernadero.php?idRegistro=<?php echo $dato->idRegistro; ?>"><i class="bi bi-trash"></i></a></td>
@@ -122,6 +122,12 @@ p                                <tr>
                     Captura de Datos
                 </div>
                 <form  class="p-4" method="POST" action="RegistrarInvernadero.php">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">ID Registro: </label>
+                    <input type="text" class="form-control" name="txtIdRegistro" autofocus required>
+                    </div>
+
                     <div class="mb-3">
                         <label class="form-label">Nave: </label>
                     <input type="text" class="form-control" name="txtNave" autofocus required>
@@ -160,4 +166,4 @@ p                                <tr>
 </div>
 
 
-<?php include 'template/footerPersona.php' ?>
+<?php include 'template/footerInvernadero.php' ?>
