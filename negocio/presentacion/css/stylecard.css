@@ -8,7 +8,7 @@ body{
     width: 140px;
     border-radius: 50%;
     padding: 3px;
-    background: #99619e;
+    background: #Add995;
 }
 
 .seccion .card .imagen img{
@@ -31,7 +31,7 @@ body{
     position: absolute;
     height: 35%;
     width: 100%;
-    background-color: #50144b;
+    background-color: #94cf74;
     border-radius: 20px 20px 0 0;
 }
 
@@ -81,7 +81,7 @@ body{
 
 .separar{
     height: 80px;
-    background-color: #4f0063;
+    background-color: #6da74e;
     color: white;
     background-size: cover;
     background-position: center;

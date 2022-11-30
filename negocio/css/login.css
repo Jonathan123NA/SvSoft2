@@ -17,7 +17,7 @@ form {
 h1 {
 	text-align: center;
 	padding: 12px;
-	color: rgb(206, 203, 203)
+	color: #4CACBC;
 }
 
 input {
@@ -29,7 +29,7 @@ input {
 }
 
 input[type='submit']{
-	background-color: #48e;
+	background-color: #D48DF5;
 	color: #fff;
 	width: calc(80% - 20px);
 	margin: 0 10%;
@@ -62,12 +62,12 @@ input[type='submit']{
 
 }
 body{
-	background-image:url(../IMG/fondolegal.jpg);
+	background: #4FF5A3;
 	width: 100%;
 	height:100%vh;
 	background-size: cover;
 
-	color:white;
+	color: #F6E3C5;
 	
 }
 .mensaje{
@@ -83,7 +83,7 @@ body{
 h6 {
 	text-align: center;
 	padding: 12px;
-    color: rgb(206, 203, 203);
+    color: #F6E3C5;
     line-height: 20px;
 }
 .gabo{

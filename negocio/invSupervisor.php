@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/fondo.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <?php include 'template/headerInvernadero.php' ?>
 
 <?php
@@ -75,7 +77,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    Registro de Actividades    
+                    Registro de la información relevante del invernadero   
                 </div>
                 <div class="p-4">
                         <table class="table align-middle">
@@ -114,8 +116,42 @@
                     </div>
                     
                 </div>
+                
+                <!-- Graficas --->
+                <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
+                <script src="librerias/jquery-3.3.1.min.js"></script>
+                <script src="librerias/plotly-latest.min.js"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#cargaLineal').load('lineal.php');
+                    $('#cargaBarras').load('barras.php');
+                });
+                </script>
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-primary">
+                                <div class="panel panel-heading">
+                                    Graficas de la temperatura interna y externa acorde a la nave del invernadero
+                                </div>
+                                <div class="panel panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div id="cargaLineal"></div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div id="cargaBarras"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-    
+
         <div class="col-md-5">
             <div class="card">
                 <div class="card-header">
@@ -163,6 +199,7 @@
         </div>
     </div>
 </div>
+<br></br><br></br>
 </div>
 
 

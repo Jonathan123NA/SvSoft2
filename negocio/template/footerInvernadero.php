@@ -1,4 +1,4 @@
-<footer class="container-fluid bg-dark fixed-bottom">
+<footer class="navbar-light" style="background-color: #4CACBC;">
 <div class="col-md text-light text-center py-3">
     SVSOFT
 </div>

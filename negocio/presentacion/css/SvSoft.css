@@ -1,7 +1,7 @@
 .Titulos{
     font-family:Impact;
     font-size: 50px;
-    color: #38f1d3; text-shadow: 5px 5px 5px black;
+    color: #Add995 ; text-shadow: 1px 1px 1px rgb(0, 0, 0);/*titulos "SVSOF" */
     width:100wv; 
     text-align:center;
 }
@@ -14,6 +14,14 @@ body{
 
 nav{
     font-family: Arial ;
+    background-color: #F6E9C5;/*creo q este es lo blanquito de la barra de navegacion*/
+    
+}
+
+ 
+/* cambiar el color de fondo a la barra */
+nav.navbar {
+    background-color: #1694c5;
 }
 
 .lil{
@@ -23,7 +31,7 @@ nav{
 .seccionactores{
     background-image: url(imagenes/invernadero.jpg);
     height: 350px;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 204, 147);/*creo q este cambia el color de los botones seleccionado*/
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -32,7 +40,7 @@ nav{
 .secciondirect{
     background-image: url(imagenes/personal.png);
     height: 350px;
-    color: rgb(255, 255, 255);
+    color: rgb(253, 204, 147);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -57,7 +65,7 @@ nav{
 .box .hover{
     width: 0%;
     height: 350px;
-    background-color: rgba(0, 0, 0, 0.850);
+    background-color: #86d4c1d9;  /* este es para cambiar color de la targeta de usuarios */ 
     position: absolute;
     top:0;
     display: flex;

@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+    display: grid;
+    color: white;
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(
+        to bottom right,
+        #C4BBF5 0%,
+        #4CACBC 20%,
+        #6CC4A1 40%,
+        #Add995 60%,
+        #F6E9C5 80%
+        );
+
+        background-size: 200% 200%;
+
+        animation: movimiento 5s linear infinite alternate;
+}
+
+@keyframes movimiento {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+
+    }
+}

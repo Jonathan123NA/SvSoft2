@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/fondo.css">
 <?php include 'template/headerInvernadero.php' ?>
 
 <?php
@@ -12,7 +13,7 @@
         <div class="col-md-7">
             <div class="card">
                 <div class="card-header">
-                    Registro de Actividades    
+                    Registro de la información relevante del invernadero   
                 </div>
                 <div class="p-4">
                         <table class="table align-middle">

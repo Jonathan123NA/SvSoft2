@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/fondo.css">
 <?php include 'template/headerPersona.php' ?>
 
 <?php
