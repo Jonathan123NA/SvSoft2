@@ -1,25 +1,27 @@
-<!-- Referencia del css y header-->
-<link rel="stylesheet" href="css/fondo.css">
+
+<link rel="stylesheet" href="css/fondoCambiante.css"><!--css con el fondo y el boton de cambiar paleta de colores-->
+<link rel="stylesheet" href="css/cabecera.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
 <?php include 'template/headerInvernadero.php' ?>
 
-<!-- Conexion con la base de datos y consulta select-->
 <?php
     include_once "model/conexionPersona.php";
     $sentencia = $bd -> query("select * from invernadero");
     $invernadero = $sentencia->fetchAll(PDO::FETCH_OBJ);
-    //prara probar conexion se hace uso del siguiente codigo: print_r($personal);
+    //print_r($personal);
 ?>
 
-<!-- Tabla que contiene la informacion relevante del invernadero-->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-7">
             <div class="card">
-                <div class="card-header"> <!-- Titulo de la tabla -->
-                    Registro de la información relevante del invernadero   
+                <div class="card-header">
+                    Registro de Actividades    
                 </div>
                 <div class="p-4">
-                        <!-- Campos de la tabla -->
                         <table class="table align-middle">
                             <thead>
                                 <tr>
@@ -32,12 +34,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            
-                            <!-- Recorrido de los datos -->
+
                             <?php
                                 foreach($invernadero as $dato){
                             ?>
-                                <!-- Mostrar cada dato de la base de datos en el campo correspondiente -->
+                           
                                 <tr>
                                     <td scope="row"><?php echo $dato->idRegistro; ?></td>
                                     <td><?php echo $dato->nave; ?></td>
@@ -58,5 +59,5 @@
     </div>
 </div>
 
-<!-- Footer -->
+<script src="js/main.js"></script><!--Importante para que funcione el boton de cambio-->
 <?php include 'template/footerInvernadero.php' ?>

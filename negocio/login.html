@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/fondo.css">
+    <link rel="stylesheet" href="css/login.css"><!--Estilos de Login-->
+    <link rel="stylesheet" href="css/fondoCambiante.css"><!--css con el fondo y el boton de cambiar paleta de colores-->
     <link rel="stylesheet" href="css/cabecera.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    </head>
+<body class=""><!--Creo esto se hace para q jale-->
+    <!--Aqui emepeiza el boton de Cambio de paleta de colores-->
+    <div class="modo" id="modo">
+        <i class="fas fa-toggle-on"></i>
+    </div> 
+    <!--Aqui Termina el boton de Cambio de paleta de colores-->  
+    
+    <!--Aqui emepeiza el Formulario de registro-->
    <form action="validar.php" method="post">
 
    <h1 class="animate__animated animate__backInLeft">Iniciar Sesion</h1>
-   <br></br>
+   <br>
+   <br>
+   <br>
    <p>Usuario <input type="text" placeholder="Tipo de Usuario" name="usuario"></p>
-   <br></br>
+   <br>
    <br>
    <p>Contraseña <input type="password" placeholder="ingrese contraseña" name="password"></p>
-   <br></br>
+   <br>
    <br>
    <input type="submit" value="Ingresar">
    
    </form> 
+   <!--Aqui Termina el Formulario de registro-->
 </body>
+<script src="js/main.js"></script><!--Importante para que funcione el boton de cambio-->
 </html>

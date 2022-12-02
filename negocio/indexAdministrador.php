@@ -3,12 +3,16 @@
     <head>
     <meta charset="utf-8">
         <title> SvSoft</title>
-        <!-- Referencias para los estilos -->
         <link href="presentacion/css/SvSoft.css" rel="stylesheet" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/fondoCambiante.css"><!--css con el fondo y el boton de cambiar paleta de colores-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    
     </head>
     <header>
-    <!-- Barra de navegacion superior la cual cuenta con 5 botones (Inicio, Invernadero, Personal, SvSoft y Exit)-->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark d-flex justify-content-center align-items-center flex-column a">
             <ul class="nav">
                 <a class="btn btn-outline-light m-2 d-flex justify-content-center align-items-center" href="indexAdministrador.php"> 
@@ -40,14 +44,16 @@
                         class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
                         <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
-                    </svg>Exit </button></form>
+                    </svg>Exit </button></form> <!--Aqui emepeiza el boton de Cambio de paleta de colores-->
+    <div class="modo" id="modo"><i class="fas fa-toggle-on"></i></div> 
+    <!--Aqui Termina el boton de Cambio de paleta de colores-->  
             </ul>
           </nav>
     </header>
-<body>
+<body class="">
 <h1 class="Titulos">Bienvenido a SvSoft</h1>
 <br>
-    <!-- Panel de navegacion hacia la informacion relevante del invernadero-->
+
     <a href="invAdministrador.php" >
         <div class = " seccionactores mt-3">
             <div class="box">
@@ -58,7 +64,7 @@
           
         </div> 
       </a>
-    <!-- Panel de navegacion hacia las actividades del personal -->
+
       <a href="perAdministrador.php" >
         <div class = " secciondirect mt-3">
             <div class="box">
@@ -69,7 +75,7 @@
           
         </div> 
       </a>
-
+      <script src="js/main.js"></script><!--Importante para que funcione el boton de cambio-->
 
 </body>     
 </html>
