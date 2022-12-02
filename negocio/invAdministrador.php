@@ -1,21 +1,25 @@
+<!-- Referencia del css y header-->
 <link rel="stylesheet" href="css/fondo.css">
 <?php include 'template/headerInvernadero.php' ?>
 
+<!-- Conexion con la base de datos y consulta select-->
 <?php
     include_once "model/conexionPersona.php";
     $sentencia = $bd -> query("select * from invernadero");
     $invernadero = $sentencia->fetchAll(PDO::FETCH_OBJ);
-    //print_r($personal);
+    //prara probar conexion se hace uso del siguiente codigo: print_r($personal);
 ?>
 
+<!-- Tabla que contiene la informacion relevante del invernadero-->
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-7">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header"> <!-- Titulo de la tabla -->
                     Registro de la información relevante del invernadero   
                 </div>
                 <div class="p-4">
+                        <!-- Campos de la tabla -->
                         <table class="table align-middle">
                             <thead>
                                 <tr>
@@ -28,11 +32,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                            
+                            <!-- Recorrido de los datos -->
                             <?php
                                 foreach($invernadero as $dato){
                             ?>
-                           
+                                <!-- Mostrar cada dato de la base de datos en el campo correspondiente -->
                                 <tr>
                                     <td scope="row"><?php echo $dato->idRegistro; ?></td>
                                     <td><?php echo $dato->nave; ?></td>
@@ -53,5 +58,5 @@
     </div>
 </div>
 
-
+<!-- Footer -->
 <?php include 'template/footerInvernadero.php' ?>

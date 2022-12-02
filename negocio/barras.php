@@ -1,7 +1,7 @@
 <?php
 	require_once "php/conexion.php";
 	$conexion=conexion();
-	$sql="SELECT nave,temExterna  
+	$sql="SELECT temExterna,nave  
 			from invernadero order by nave";
 	$result=mysqli_query($conexion,$sql);
 	$valoresY=array();//

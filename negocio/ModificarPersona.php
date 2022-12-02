@@ -1,5 +1,6 @@
 <?php include 'template/headerPersona.php' ?>
-
+<link rel="stylesheet" href="css/fondoEstatico.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 <?php
     if(!isset($_GET['idPersona'])){
         header('Location: perSupervisor.php?mensaje=error');
@@ -20,7 +21,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
-                    Editar datos:
+                Editar datos:
                 </div>
                 <form class="p-4" method="POST" action="ModificarProcesoPersona.php">
                     <div class="mb-3">
@@ -28,11 +29,11 @@
                         <input type="text" class="form-control" name="txtID" autofocus required value="<?php echo $personal->idPersona; ?>">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Nombre: </label>
+                        <label class="form-label">Nombre del Personal: </label>
                         <input type="text" class="form-control" name="txtNombre" autofocus required value="<?php echo $personal->nombre; ?>">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Actividades: </label>
+                        <label class="form-label">Descripción de Actividades: </label>
                         <input type="text" class="form-control" name="txtActividades" autofocus required value="<?php echo $personal->actividad; ?>">
                     </div>
                     <div class="mb-3">
@@ -52,5 +53,5 @@
         </div>
     </div>
 </div>
-
+<br></br>
 <?php include 'template/footerPersona.php' ?>

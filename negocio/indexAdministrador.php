@@ -3,10 +3,12 @@
     <head>
     <meta charset="utf-8">
         <title> SvSoft</title>
+        <!-- Referencias para los estilos -->
         <link href="presentacion/css/SvSoft.css" rel="stylesheet" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <header>
+    <!-- Barra de navegacion superior la cual cuenta con 5 botones (Inicio, Invernadero, Personal, SvSoft y Exit)-->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark d-flex justify-content-center align-items-center flex-column a">
             <ul class="nav">
                 <a class="btn btn-outline-light m-2 d-flex justify-content-center align-items-center" href="indexAdministrador.php"> 
@@ -45,7 +47,7 @@
 <body>
 <h1 class="Titulos">Bienvenido a SvSoft</h1>
 <br>
-
+    <!-- Panel de navegacion hacia la informacion relevante del invernadero-->
     <a href="invAdministrador.php" >
         <div class = " seccionactores mt-3">
             <div class="box">
@@ -56,7 +58,7 @@
           
         </div> 
       </a>
-
+    <!-- Panel de navegacion hacia las actividades del personal -->
       <a href="perAdministrador.php" >
         <div class = " secciondirect mt-3">
             <div class="box">

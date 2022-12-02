@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/fondo.css">
+<link rel="stylesheet" href="css/fondoEstatico.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 <?php include 'template/headerPersona.php' ?>
 
@@ -84,8 +84,8 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Id Personal</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Actividad</th>
+                                    <th scope="col">Nombre del Personal</th>
+                                    <th scope="col">Descripcion de la Actividad</th>
                                     <th scope="col">Hora</th>
                                     <th scope="col">Fecha</th>
                                     <th scope="col" colspan="2" >Opciones</th>
@@ -128,12 +128,12 @@
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Nombre Personal: </label>
+                        <label class="form-label">Nombre del Personal: </label>
                     <input type="text" class="form-control" name="txtNombre" autofocus required>
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label">Descripcion de Actividad: </label>
+                        <label class="form-label">Descripción de Actividad: </label>
                     <input type="text" class="form-control" name="txtActividades" autofocus required>
                     </div>
                     
@@ -158,6 +158,5 @@
     </div>
 </div>
 </div>
-
-
+<br></br>
 <?php include 'template/footerPersona.php' ?>

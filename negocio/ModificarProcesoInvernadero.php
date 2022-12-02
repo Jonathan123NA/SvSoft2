@@ -7,14 +7,16 @@
     include 'model/conexionPersona.php';
     $idRegistro = $_POST["idRegistro"];
     $id = $_POST["txtIdRegistro"];
+    $nombreSupervisor = $_POST["txtNombreSupervisor"];
     $nave = $_POST["txtNave"];
     $tempInterna = $_POST["txtTempInt"];
     $temExterna = $_POST["txtTempExt"];
     $humeRelativa = $_POST["txtHumedad"];
     $radiacion = $_POST["txtRadiacion"];
+    $fecha= $_POST["txtFecha"];
 
-    $sentencia = $bd->prepare("UPDATE invernadero SET idRegistro = ?, nave = ?, tempInterna = ?, temExterna = ?, humeRelativa = ?, radiacion = ? where idRegistro = ?;");
-    $resultado = $sentencia->execute([$id, $nave, $tempInterna, $temExterna, $humeRelativa, $radiacion, $idRegistro]);
+    $sentencia = $bd->prepare("UPDATE invernadero SET idRegistro = ?, nombreSupervisor = ?, nave = ?, tempInterna = ?, temExterna = ?, humeRelativa = ?, radiacion = ?, fecha = ? where idRegistro = ?;");
+    $resultado = $sentencia->execute([$id, $nombreSupervisor,$nave, $tempInterna, $temExterna, $humeRelativa, $radiacion, $fecha, $idRegistro]);
 
     if ($resultado === TRUE) {
         header('Location: invSupervisor.php?mensaje=editado');
